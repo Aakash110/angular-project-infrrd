@@ -1,0 +1,16 @@
+<p-card [style]="{width: '360px'}" styleClass="ui-card-shadow">
+  <div>Name: {{employee.name}}</div>
+  <div>Comapny Name: {{employee.companyName}}</div>
+  <div>Email Id: {{employee.emailId}}</div>
+  <div>Contact No: {{employee.contactNo}}</div>
+  <div>Designation: {{employee.designation}}</div>
+  <div class="images">
+    <ng-container>
+      <img style ="height:200px; padding-top:10px;" src={{employee.imageUrl}}>
+    </ng-container>
+</div>
+  <p-footer>
+      <button pButton type="button" label="Edit" icon="pi pi-check" style="margin-right: .25em" (click)="editEmployee()"></button>
+      <button pButton type="button" label="Delete" icon="pi pi-times" class="ui-button-secondary" (click)="deleteEmployee()"></button>
+  </p-footer>
+</p-card>
